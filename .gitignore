@@ -2,3 +2,4 @@ node_modules
 model/*.js
 db.json
 index.js
+index.cjs

@@ -3,16 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
+  "type": "module",
   "scripts": {
-    "build": "npx tsc index.ts && node index.js",
+    "tsc-build": "npx tsc index.ts",
+    "rollup-build": "npx rollup -c rollup.config.js && node index.cjs",
     "start": "npx json-server --watch db.json"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@faker-js/faker": "^8.4.1",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^20.12.2",
     "json-server": "^1.0.0-alpha.23",
+    "rollup": "^4.13.2",
+    "tslib": "^2.6.2",
     "typescript": "^5.4.3"
   }
 }

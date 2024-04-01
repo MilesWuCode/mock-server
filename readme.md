@@ -3,16 +3,29 @@
 - [fakerjs](https://fakerjs.dev/)
 - [json-server](https://github.com/typicode/json-server)
 
+## Case1: TSC
+
 ```sh
-# use packages
-npm install typescript @types/node @faker-js/faker json-server
+# not working
+npx tsc index.ts && node index.js
 
-# export index.js
+# use this
 npx tsc index.ts
+node index.js
+```
 
-# export temp.json
-node indes.js
+## Case2: Rollup
 
-# run server
+```sh
+npm run rollup && node index.cjs
+```
+
+## Run
+
+```sh
 npx json-server db.json
 ```
+
+## Model example
+
+- ./model/\*.ts

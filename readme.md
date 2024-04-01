@@ -1,7 +1,7 @@
 # mock server
 
-- json generation: [fakerjs](https://fakerjs.dev/)
-- json-server
+- [fakerjs](https://fakerjs.dev/)
+- [json-server](https://github.com/typicode/json-server)
 
 ```sh
 # use packages
